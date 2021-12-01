@@ -1,0 +1,9 @@
+@use '../variable' as *;
+
+.allPageContainer {
+    max-width: 95%;
+    min-height: 400px;
+    margin: auto;
+    margin-top: 2.5vw;
+    margin-bottom: 2.5vw;
+}

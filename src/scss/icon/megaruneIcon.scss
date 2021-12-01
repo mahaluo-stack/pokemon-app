@@ -1,0 +1,52 @@
+@use '../variable' as *;
+
+.rune {
+    height: 100%;
+    width: 100%;
+    background: $main-black-gradience;
+    border-radius: 90% 150% 60% 90%;
+    border: 1px solid $text-color;
+    transform: rotate(60deg);
+}
+
+.dna {
+    position: absolute;
+    background: $main-black-gradience;
+    top: 30%;
+    left: 10%;
+    height: 30%;
+    width: 50%;
+    border: 1px solid $text-color;
+    border-radius: 0% 60% 0% 60%;
+    transform: rotate(-10deg);
+}
+
+.runestripeone {
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    width: 70%;
+    height: 1px;
+    background-color: $text-color;
+    transform: rotate(-30deg);
+}
+
+.runestripetwo {
+    position: absolute;
+    top: 50%;
+    left: 19%;
+    width: 77%;
+    height: 1px;
+    background-color: $text-color;
+    transform: rotate(-30deg);
+}
+
+.runestripethree {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    width: 55%;
+    height: 1px;
+    background-color: $text-color;
+    transform: rotate(-30deg);
+}

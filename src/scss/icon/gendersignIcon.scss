@@ -1,0 +1,62 @@
+@use '../variable' as *;
+
+.genderCircle {
+    height: 50%;
+    width: 50%;
+    border: 1px solid $text-color;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+}
+
+.maleCross {
+    position: absolute;
+    bottom: 75%;
+    right: -15%;
+    height: 70%;
+    width: 1px;
+    transform: rotate(45deg);
+    background-color: $text-color;
+    display: flex;
+    flex-direction: column;
+}
+
+.maleInner1 {
+    position: absolute;
+    top: -15%;
+    right: 110%;
+    height: 70%;
+    width: 1px;
+    background-color: $text-color;
+    transform: rotate(45deg);
+}
+
+.maleInner2 {
+    position: absolute;
+    top: -10%;
+    left: 140%;
+    height: 70%;
+    width: 1px;
+    background-color: $text-color;
+    transform: rotate(135deg);
+}
+
+.femaleCross {
+    margin: auto;
+    margin-top: 100%;
+    height: 70%;
+    width: 1px;
+    background-color: $text-color;
+    display: flex;
+    flex-direction: column;
+}
+
+.femaleInner {
+    margin: auto;
+    margin-bottom: 50%;
+    margin-top: auto;
+    height: 70%;
+    width: 1px;
+    background-color: $text-color;
+    transform: rotate(90deg);
+}

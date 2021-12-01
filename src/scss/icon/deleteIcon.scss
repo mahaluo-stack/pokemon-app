@@ -1,0 +1,46 @@
+@use '../variable' as *;
+
+.deleteIconCircle {
+
+    height: 50%;
+    width: 50%;
+    border: 1px solid $text-color;
+    border-radius: 50%;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.3;
+    }
+
+    &:active {
+        transform: translateY(1px);
+    }
+}
+
+.deleteIconCross {
+    position: relative;
+    height: 60%;
+    width: 60%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.deleteIconCross::before,
+.deleteIconCross::after {
+    position: absolute;
+    bottom: 50%;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: $text-color;
+}
+
+.deleteIconCross::before {
+    transform: rotate(45deg);
+}
+
+.deleteIconCross::after {
+    transform: rotate(-45deg);
+}

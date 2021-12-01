@@ -1,0 +1,38 @@
+@keyframes slide-in-searchbar {
+    0% {
+        transform: translateX(400%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes slide-in-searchbar {
+    0% {
+        -webkit-transform: translateX(400%);
+    }
+
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@keyframes slide-out-searchbar {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(400%);
+    }
+}
+
+@-webkit-keyframes slide-out-searchbar {
+    0% {
+        -webkit-transform: translateX(0%);
+    }
+
+    100% {
+        -webkit-transform: translateX(400%);
+    }
+}

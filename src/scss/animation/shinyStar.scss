@@ -1,0 +1,118 @@
+@use '../variable' as *;
+
+.shinyStar {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    &.shinyAnimation {
+        animation: rotate 1.5s linear infinite, delay-animation 1.5s linear infinite;
+    }
+}
+
+//animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+.shinyStar:before,
+.shinyStar:after {
+    content: "";
+    position: absolute;
+    background-color: $shiny-star-color;
+    background-image: $shiny-star-gradience;
+    display: block;
+    left: 0;
+    width: 141.4213%;
+    /* 100% * √2 */
+    top: 0;
+    bottom: 0;
+    border-radius: 5%;
+    transform: rotate(66.66deg) skewX(45deg);
+    //animation: shine 3s infinite ease-in;
+}
+
+.shinyStar:after {
+    transform: rotate(156.66deg) skew(45deg);
+}
+
+@keyframes rotate {
+    0% {
+        opacity: 0;
+    }
+
+    6% {
+        width: 6%;
+        height: 6%;
+    }
+
+    12% {
+        width: 12%;
+        height: 12%;
+    }
+
+    18% {
+        width: 18%;
+        height: 18%;
+    }
+
+    25% {}
+
+    32% {}
+
+    38% {
+       
+    }
+
+    45% {}
+
+    50% {
+        width: 50%;
+        height: 50%;
+    }
+
+    56% {}
+
+    62% {}
+
+    68% {}
+
+    75% {
+        transform: rotate(90deg);
+        opacity: 0.8;
+    }
+
+    82% {
+     
+        width: 100%;
+        height: 100%;
+    }
+
+    87% {
+        transform: rotate(180deg);
+    }
+
+    93% {
+        transform: rotate(240deg);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes delay-animation {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    50.01% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

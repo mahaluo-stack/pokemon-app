@@ -1,0 +1,49 @@
+@use '../../variable'as *;
+
+.responsivePokemonGridContainer {
+
+    max-width: 100%;
+    height: auto;
+
+    margin: auto;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    @media only screen and (max-width: $device-tiny) {
+
+        grid-template-areas: 
+        'searchbar'
+        'searchList'
+        'pokemonList';
+
+        grid-template-columns: 60vw;
+    }
+
+    @media only screen and (max-width: $device-small) {
+
+        grid-template-areas: 
+        'searchbar'
+        'searchList'
+        'pokemonList';
+
+        grid-template-columns: 60vw;
+    }
+
+    @media only screen and (min-width: $device-medium) {
+        grid-template-columns: 100vw;
+    }
+
+    @media only screen and (min-width: $device-large) {
+        grid-template-columns: 100vw;
+    }
+
+    @media only screen and (min-width: $device-desktop) {
+        grid-template-columns: 100vw;
+    }
+}

@@ -1,0 +1,36 @@
+.moveFast {
+    animation: moveBackground 50s ease infinite;
+}
+
+.moveSlow {
+    animation: moveBackground 160s ease infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-webkit-keyframes moveBackground {
+    0% {
+        -webkit-background-position: 0% 50%
+    }
+
+    50% {
+        -webkit-background-position: 100% 50%
+    }
+
+    100% {
+        -webkit-background-position: 0% 50%
+    }
+}
+

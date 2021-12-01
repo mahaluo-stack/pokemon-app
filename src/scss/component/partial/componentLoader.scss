@@ -1,0 +1,41 @@
+@use '../../variable' as *;
+
+.componentLoader {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.componentLoader:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid $text-color;
+    border-color: $text-color transparent $text-color transparent;
+    animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+

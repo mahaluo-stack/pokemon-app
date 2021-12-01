@@ -1,0 +1,32 @@
+@use '../variable' as *;
+
+.enterIconContainer {
+    
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    border: 1px solid $text-color;
+    border-radius: 50% 50% 50% 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.3;
+    }
+}
+
+.enterIconPointer {
+
+    background-color: transparent;
+    height: 50%;
+    width: 50%;
+    margin-bottom: 2px;
+    border-top: 1px solid $text-color;
+    border-right: 1px solid $text-color;
+    border-radius: 00% 20% 00% 20%;
+    transition: transform 0.6s;
+    transform: rotate(135deg);
+}

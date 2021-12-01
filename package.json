@@ -1,0 +1,51 @@
+{
+  "name": "statsapp",
+  "version": "1.0.0",
+  "description": "an app for nerds",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mahaluo-stack/statsApp.git"
+  },
+  "keywords": [
+    "statistics"
+  ],
+  "author": "Max",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahaluo-stack/statsApp/issues"
+  },
+  "homepage": "https://github.com/mahaluo-stack/statsApp#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "babel-plugin-import": "^1.13.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "css-loader": "^6.5.1",
+    "dotenv-webpack": "^7.0.3",
+    "html-webpack-plugin": "^5.5.0",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.62.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
+  },
+  "dependencies": {
+    "firebase": "^9.4.0",
+    "mini-svg-data-uri": "^1.4.3",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-intersection-observer": "^8.32.2",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.0.1",
+    "redux-thunk": "^2.4.0",
+    "regenerator-runtime": "^0.13.9"
+  }
+}

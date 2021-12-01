@@ -1,0 +1,23 @@
+
+
+$nav-text-size: 1.2em;
+
+$gold-text-color: #ffdb58;
+$text-color: #F3EFF5;
+$shiny-star-color: #b8c6db;
+
+$shadowfire-gradience: linear-gradient(0deg, rgba(128, 0, 128, 0.5) 10%, rgba(139, 0, 139, 0.5) 15%, rgba(186, 85, 211, 0.5) 50%, rgba(238, 130, 238, 0.5) 59%);
+$shiny-star-gradience: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+$main-black-gradience: linear-gradient(0deg, #0D0A0B, #161a1d);
+$rainbow-gradience: linear-gradient(to right, #fe6962, #EAAE6F, #F1E378, #B2E174, #9FC8D6, #958BEE, #CF90E8);
+
+/* Extra small devices (phones, 320px and down) */
+$device-tiny: 350px;
+/* Extra small devices (phones, 600px and down) */
+$device-small: 600px;
+/* Medium devices (landscape tablets, 768px and up) */
+$device-medium: 768px;
+ /* Large devices (laptops/desktops, 992px and up) */
+$device-large: 992px;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+$device-desktop: 1200px;

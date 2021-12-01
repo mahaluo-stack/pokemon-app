@@ -1,0 +1,72 @@
+@use '../variable'as *;
+
+.navText {
+
+    font-size: $nav-text-size;
+    color: $text-color;
+
+    transition: opacity 0.2s;
+    transition: transform 0.5s;
+
+    padding: 0;
+    margin: 0;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+    }
+
+    &.clicked {
+        text-decoration: underline;
+    }
+}
+
+.eliteText {
+    display: inline-block;
+    color: $text-color;
+
+    background: $text-color -webkit-gradient(linear, 100% 0, 0 0, from(#acacac), color-stop(0.5, $text-color), to(#acacac));
+
+    background-position: -4rem top;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-name: shimmer;
+    -webkit-animation-name: shimmer;
+    animation-duration: 2.2s;
+    -webkit-animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    background-size: 4rem 100%;
+    -webkit-background-size: 4rem 100%;
+
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -4rem top;
+    }
+
+    70% {
+        background-position: 12.5rem top;
+    }
+
+    100% {
+        background-position: 12.5rem top;
+    }
+}
+
+@-webkit-keyframes shimmer {
+    0% {
+        background-position: -4rem top;
+    }
+
+    70% {
+        background-position: 12.5rem top;
+    }
+
+    100% {
+        background-position: 12.5rem top;
+    }
+}

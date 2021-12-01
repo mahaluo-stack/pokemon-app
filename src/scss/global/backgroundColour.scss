@@ -1,0 +1,7 @@
+@use '../variable'as *;
+
+.rainbow {
+    background: $rainbow-gradience;
+    background-size: 400% 400%;
+}
+
